@@ -3,15 +3,15 @@
 /*
  * This file is part of the Dektrium project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Dektrium project <http://github.com/pascini/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\models;
+namespace pascini\user\models;
 
-use dektrium\user\traits\ModuleTrait;
+use pascini\user\traits\ModuleTrait;
 use yii\db\ActiveRecord;
 
 /**
@@ -33,7 +33,7 @@ use yii\db\ActiveRecord;
 class Profile extends ActiveRecord
 {
     use ModuleTrait;
-    /** @var \dektrium\user\Module */
+    /** @var \pascini\user\Module */
     protected $module;
 
     /** @inheritdoc */

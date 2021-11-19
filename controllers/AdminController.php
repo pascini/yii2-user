@@ -3,22 +3,22 @@
 /*
  * This file is part of the Dektrium project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Dektrium project <http://github.com/pascini/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\controllers;
+namespace pascini\user\controllers;
 
-use dektrium\user\filters\AccessRule;
-use dektrium\user\Finder;
-use dektrium\user\models\Profile;
-use dektrium\user\models\User;
-use dektrium\user\models\UserSearch;
-use dektrium\user\helpers\Password;
-use dektrium\user\Module;
-use dektrium\user\traits\EventTrait;
+use pascini\user\filters\AccessRule;
+use pascini\user\Finder;
+use pascini\user\models\Profile;
+use pascini\user\models\User;
+use pascini\user\models\UserSearch;
+use pascini\user\helpers\Password;
+use pascini\user\Module;
+use pascini\user\traits\EventTrait;
 use yii;
 use yii\base\ExitException;
 use yii\base\Model;
@@ -45,97 +45,97 @@ class AdminController extends Controller
 
     /**
      * Event is triggered before creating new user.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \pascini\user\events\UserEvent.
      */
     const EVENT_BEFORE_CREATE = 'beforeCreate';
 
     /**
      * Event is triggered after creating new user.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \pascini\user\events\UserEvent.
      */
     const EVENT_AFTER_CREATE = 'afterCreate';
 
     /**
      * Event is triggered before updating existing user.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \pascini\user\events\UserEvent.
      */
     const EVENT_BEFORE_UPDATE = 'beforeUpdate';
 
     /**
      * Event is triggered after updating existing user.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \pascini\user\events\UserEvent.
      */
     const EVENT_AFTER_UPDATE = 'afterUpdate';
 
     /**
      * Event is triggered before impersonating as another user.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \pascini\user\events\UserEvent.
      */
     const EVENT_BEFORE_IMPERSONATE = 'beforeImpersonate';
 
     /**
      * Event is triggered after impersonating as another user.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \pascini\user\events\UserEvent.
      */
     const EVENT_AFTER_IMPERSONATE = 'afterImpersonate';
 
     /**
      * Event is triggered before updating existing user's profile.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \pascini\user\events\UserEvent.
      */
     const EVENT_BEFORE_PROFILE_UPDATE = 'beforeProfileUpdate';
 
     /**
      * Event is triggered after updating existing user's profile.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \pascini\user\events\UserEvent.
      */
     const EVENT_AFTER_PROFILE_UPDATE = 'afterProfileUpdate';
 
     /**
      * Event is triggered before confirming existing user.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \pascini\user\events\UserEvent.
      */
     const EVENT_BEFORE_CONFIRM = 'beforeConfirm';
 
     /**
      * Event is triggered after confirming existing user.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \pascini\user\events\UserEvent.
      */
     const EVENT_AFTER_CONFIRM = 'afterConfirm';
 
     /**
      * Event is triggered before deleting existing user.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \pascini\user\events\UserEvent.
      */
     const EVENT_BEFORE_DELETE = 'beforeDelete';
 
     /**
      * Event is triggered after deleting existing user.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \pascini\user\events\UserEvent.
      */
     const EVENT_AFTER_DELETE = 'afterDelete';
 
     /**
      * Event is triggered before blocking existing user.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \pascini\user\events\UserEvent.
      */
     const EVENT_BEFORE_BLOCK = 'beforeBlock';
 
     /**
      * Event is triggered after blocking existing user.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \pascini\user\events\UserEvent.
      */
     const EVENT_AFTER_BLOCK = 'afterBlock';
 
     /**
      * Event is triggered before unblocking existing user.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \pascini\user\events\UserEvent.
      */
     const EVENT_BEFORE_UNBLOCK = 'beforeUnblock';
 
     /**
      * Event is triggered after unblocking existing user.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \pascini\user\events\UserEvent.
      */
     const EVENT_AFTER_UNBLOCK = 'afterUnblock';
 
@@ -352,16 +352,16 @@ class AdminController extends Controller
         $event = $this->getUserEvent($user);
 
         $this->trigger(self::EVENT_BEFORE_IMPERSONATE, $event);
-        
+
         Yii::$app->user->switchIdentity($user, 3600);
-        
+
         $this->trigger(self::EVENT_AFTER_IMPERSONATE, $event);
 
         return $this->goHome();
     }
 
     /**
-     * If "dektrium/yii2-rbac" extension is installed, this page displays form
+     * If "pascini/yii2-rbac" extension is installed, this page displays form
      * where user can assign multiple auth items to user.
      *
      * @param int $id
@@ -371,7 +371,7 @@ class AdminController extends Controller
      */
     public function actionAssignments($id)
     {
-        if (!isset(\Yii::$app->extensions['dektrium/yii2-rbac'])) {
+        if (!isset(\Yii::$app->extensions['pascini/yii2-rbac'])) {
             throw new NotFoundHttpException();
         }
         Url::remember('', 'actions-redirect');

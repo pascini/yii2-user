@@ -3,17 +3,17 @@
 /*
  * This file is part of the Dektrium project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Dektrium project <http://github.com/pascini/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\models;
+namespace pascini\user\models;
 
-use dektrium\user\Finder;
-use dektrium\user\helpers\Password;
-use dektrium\user\traits\ModuleTrait;
+use pascini\user\Finder;
+use pascini\user\helpers\Password;
+use pascini\user\traits\ModuleTrait;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use Yii;
@@ -38,7 +38,7 @@ class LoginForm extends Model
     /** @var string Whether to remember the user */
     public $rememberMe = false;
 
-    /** @var \dektrium\user\models\User */
+    /** @var \pascini\user\models\User */
     protected $user;
 
     /** @var Finder */
@@ -61,7 +61,7 @@ class LoginForm extends Model
      */
     public static function loginList()
     {
-        /** @var \dektrium\user\Module $module */
+        /** @var \pascini\user\Module $module */
         $module = \Yii::$app->getModule('user');
 
         $userModel = $module->modelMap['User'];

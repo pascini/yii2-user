@@ -154,17 +154,17 @@ The following config allows to log in using 3 networks (Twitter, Facebook and Go
     'class' => yii\authclient\Collection::className(),
     'clients' => [
         'facebook' => [
-            'class'        => 'dektrium\user\clients\Facebook',
+            'class'        => 'pascini\user\clients\Facebook',
             'clientId'     => 'CLIENT_ID',
             'clientSecret' => 'CLIENT_SECRET',
         ],
         'twitter' => [
-            'class'          => 'dektrium\user\clients\Twitter',
+            'class'          => 'pascini\user\clients\Twitter',
             'consumerKey'    => 'CONSUMER_KEY',
             'consumerSecret' => 'CONSUMER_SECRET',
         ],
         'google' => [
-            'class'        => 'dektrium\user\clients\Google',
+            'class'        => 'pascini\user\clients\Google',
             'clientId'     => 'CLIENT_ID',
             'clientSecret' => 'CLIENT_SECRET',
         ],
@@ -181,7 +181,7 @@ with the name provided via facebook:
 // plase this code somewhere in your config files (bootstrap.php in case of using advanced app template, web.php in case
 // of using basic app template
 
-use dektrium\user\controllers\SecurityController; 
+use pascini\user\controllers\SecurityController; 
 
 Event::on(SecurityController::class, SecurityController::EVENT_AFTER_AUTHENTICATE, function (AuthEvent $e) {
     // if user account was not created we should not continue

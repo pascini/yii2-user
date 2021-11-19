@@ -3,15 +3,15 @@
 /*
  * This file is part of the Dektrium project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Dektrium project <http://github.com/pascini/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\models;
+namespace pascini\user\models;
 
-use dektrium\user\Finder;
+use pascini\user\Finder;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;

@@ -3,7 +3,7 @@
 /*
  * This file is part of the Dektrium project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Dektrium project <http://github.com/pascini/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -25,7 +25,7 @@ use yii\db\ActiveQuery;
 class Finder extends BaseObject
 {
     /** @var ActiveQuery */
-    protected $userQuery;
+    public $userQuery;
 
     /** @var ActiveQuery */
     protected $tokenQuery;

@@ -3,25 +3,25 @@
 /*
  * This file is part of the Dektrium project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Dektrium project <http://github.com/pascini/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\traits;
+namespace pascini\user\traits;
 
-use dektrium\user\events\AuthEvent;
-use dektrium\user\events\ConnectEvent;
-use dektrium\user\events\FormEvent;
-use dektrium\user\events\ProfileEvent;
-use dektrium\user\events\ResetPasswordEvent;
-use dektrium\user\events\UserEvent;
-use dektrium\user\models\Account;
-use dektrium\user\models\Profile;
-use dektrium\user\models\RecoveryForm;
-use dektrium\user\models\Token;
-use dektrium\user\models\User;
+use pascini\user\events\AuthEvent;
+use pascini\user\events\ConnectEvent;
+use pascini\user\events\FormEvent;
+use pascini\user\events\ProfileEvent;
+use pascini\user\events\ResetPasswordEvent;
+use pascini\user\events\UserEvent;
+use pascini\user\models\Account;
+use pascini\user\models\Profile;
+use pascini\user\models\RecoveryForm;
+use pascini\user\models\Token;
+use pascini\user\models\User;
 use yii\authclient\ClientInterface;
 use yii\base\Model;
 
