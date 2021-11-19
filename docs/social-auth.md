@@ -84,7 +84,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'google' => [
-    'class'        => 'dektrium\user\clients\Google',
+    'class'        => 'pascini\user\clients\Google',
     'clientId'     => 'CLIENT_ID',
     'clientSecret' => 'CLIENT_SECRET',
 ],
@@ -96,7 +96,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'github' => [
-    'class'        => 'dektrium\user\clients\GitHub',
+    'class'        => 'pascini\user\clients\GitHub',
     'clientId'     => 'CLIENT_ID',
     'clientSecret' => 'CLIENT_SECRET',
 ],
@@ -108,7 +108,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'vkontakte' => [
-    'class'        => 'dektrium\user\clients\VKontakte',
+    'class'        => 'pascini\user\clients\VKontakte',
     'clientId'     => 'CLIENT_ID',
     'clientSecret' => 'CLIENT_SECRET',
 ]
@@ -122,7 +122,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'yandex' => [
-    'class'        => 'dektrium\user\clients\Yandex',
+    'class'        => 'pascini\user\clients\Yandex',
     'clientId'     => 'CLIENT_ID',
     'clientSecret' => 'CLIENT_SECRET'
 ],
@@ -134,7 +134,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'linkedin' => [
-    'class'        => 'dektrium\user\clients\LinkedIn',
+    'class'        => 'pascini\user\clients\LinkedIn',
     'clientId'     => 'CLIENT_ID',
     'clientSecret' => 'CLIENT_SECRET'
 ],

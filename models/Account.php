@@ -11,10 +11,10 @@
 
 namespace pascini\user\models;
 
-use dektrium\user\clients\ClientInterface;
-use dektrium\user\Finder;
-use dektrium\user\models\query\AccountQuery;
-use dektrium\user\traits\ModuleTrait;
+use pascini\user\clients\ClientInterface;
+use pascini\user\Finder;
+use pascini\user\models\query\AccountQuery;
+use pascini\user\traits\ModuleTrait;
 use yii\authclient\ClientInterface as BaseClientInterface;
 use yii\db\ActiveRecord;
 use yii\helpers\Json;
