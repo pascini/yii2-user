@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the pascini project.
  *
  * (c) Dektrium project <http://github.com/dektrium/>
  *
@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\events;
+namespace pascini\user\events;
 
-use dektrium\user\models\Account;
+use pascini\user\models\Account;
 use yii\authclient\ClientInterface;
 use yii\base\Event;
 

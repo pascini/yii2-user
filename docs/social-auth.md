@@ -42,7 +42,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'facebook' => [
-    'class'        => 'dektrium\user\clients\Facebook',
+    'class'        => 'pascini\user\clients\Facebook',
     'clientId'     => 'APP_ID',
     'clientSecret' => 'APP_SECRET',
 ],
@@ -56,7 +56,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'twitter' => [
-    'class'          => 'dektrium\user\clients\Twitter',
+    'class'          => 'pascini\user\clients\Twitter',
     'consumerKey'    => 'CONSUMER_KEY',
     'consumerSecret' => 'CONSUMER_SECRET',
 ],
@@ -65,7 +65,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'twitter' => [
-    'class'          => 'dektrium\user\clients\Twitter',
+    'class'          => 'pascini\user\clients\Twitter',
     'consumerKey'    => 'CONSUMER_KEY',
     'consumerSecret' => 'CONSUMER_SECRET',
     'attributeParams' => [

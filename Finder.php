@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user;
+namespace pascini\user;
 
-use dektrium\user\models\query\AccountQuery;
-use dektrium\user\models\Token;
+use pascini\user\models\query\AccountQuery;
+use pascini\user\models\Token;
 use yii\authclient\ClientInterface;
 use yii\base\BaseObject;
 use yii\db\ActiveQuery;

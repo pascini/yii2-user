@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\commands;
+namespace pascini\user\commands;
 
 use dektrium\user\Finder;
 use Yii;
