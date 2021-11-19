@@ -1,14 +1,14 @@
 <?php
 
-namespace dektrium\user\traits;
+namespace pascini\user\traits;
 
-use dektrium\user\Module;
+use pascini\user\Module;
 
 /**
  * Trait ModuleTrait
  *
  * @property-read Module $module
- * @package dektrium\user\traits
+ * @package pascini\user\traits
  */
 trait ModuleTrait
 {

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\models;
+namespace pascini\user\models;
 
 use dektrium\user\clients\ClientInterface;
 use dektrium\user\Finder;

@@ -11,8 +11,8 @@
 
 namespace pascini\user\models;
 
-use dektrium\user\Finder;
-use dektrium\user\Mailer;
+use pascini\user\Finder;
+use pascini\user\Mailer;
 use yii\base\Model;
 
 /**

@@ -11,8 +11,8 @@
 
 namespace pascini\user\events;
 
-use dektrium\user\models\User;
-use dektrium\user\models\Account;
+use pascini\user\models\User;
+use pascini\user\models\Account;
 use yii\base\Event;
 
 /**
